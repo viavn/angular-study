@@ -9,6 +9,7 @@
       style="padding-bottom: 30px;"
       *ngFor="let produto of produtos"
       [produto]="produto"
+      (status)="mudarStatus($event)"
     ></produto-card-detalhe>
   </div>
 </div>
