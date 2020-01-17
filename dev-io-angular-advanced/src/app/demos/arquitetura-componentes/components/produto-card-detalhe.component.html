@@ -1,11 +1,6 @@
 <div class="card h-100">
   <div style="align-content: center;">
-    <img
-      src="/assets/{{ produto.imagem }}"
-      alt="Produto"
-      height="164px"
-      width="253px"
-    />
+    <img src="/assets/{{ produto.imagem }}" alt="Produto" height="164px" width="253px" />
   </div>
 
   <h4 class="card-title">{{ produto.nome | titlecase }}</h4>
@@ -30,19 +25,14 @@
   </div>
 
   <div class="card-footer">
-    <a
-      class="btn"
-      [ngClass]="produto.ativo ? 'btn-success' : 'btn-danger'"
-      href="javascript:void(0)"
-      (click)="emitirEvento()"
-    >
+    <a style="margin-right: 2px;" class="btn" [ngClass]="produto.ativo ? 'btn-success' : 'btn-danger'"
+      href="javascript:void(0)" (click)="emitirEvento()">
       <span>
-        <span
-          class="fa"
-          [ngClass]="produto.ativo ? 'fa-toggle-on' : 'fa-toggle-off'"
-        ></span>
-        Status</span
-      >
+        <span class="fa" [ngClass]="produto.ativo ? 'fa-toggle-on' : 'fa-toggle-off'"></span>
+        Status
+      </span>
     </a>
+
+    <a [routerLink]="['editar/', produto.id]" class="btn btn-primary">Editar</a>
   </div>
 </div>

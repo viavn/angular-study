@@ -10,12 +10,14 @@ import { ProdutoDetalheComponent } from './components/produto-card-detalhe.compo
 import { ProdutoCountComponent } from './components/produto-count.component';
 
 import { ProdutoRoutingModule } from './produto.route';
+import { EditarProdutoComponent } from './editar-produto/editar-produto.component';
 
 @NgModule({
     declarations: [
         ProdutoDashboardComponent,
         ProdutoDetalheComponent,
-        ProdutoCountComponent
+        ProdutoCountComponent,
+        EditarProdutoComponent
     ],
     imports: [
         CommonModule,
