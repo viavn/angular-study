@@ -11,6 +11,7 @@ import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.compo
 import { NavegacaoModule } from './navegacao/navegacao.module';
 
 import { AppRoutingModule } from './app.routes';
+import { AuthGuard } from './services/app.guard';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { AppRoutingModule } from './app.routes';
     NavegacaoModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
