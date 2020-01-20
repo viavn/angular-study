@@ -11,9 +11,11 @@ import { ProdutoCountComponent } from './components/produto-count.component';
 
 import { ProdutoRoutingModule } from './produto.route';
 import { EditarProdutoComponent } from './editar-produto/editar-produto.component';
+import { ProdutoAppComponent } from './produto.app.component';
 
 @NgModule({
     declarations: [
+        ProdutoAppComponent,
         ProdutoDashboardComponent,
         ProdutoDetalheComponent,
         ProdutoCountComponent,
