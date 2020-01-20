@@ -55,17 +55,10 @@ export class ProdutoDashboardComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    console.log('Objeto do Contador: ', this.contador.produtos);
-
     const clickTexto: Observable<any> = fromEvent(this.mensagemTela.nativeElement, 'click');
     clickTexto.subscribe(() => {
       alert('clicou no texto!');
       return;
-    });
-
-    console.log(this.botoes);
-    this.botoes.forEach((p) => {
-      console.log(p.produto);
     });
   }
 
